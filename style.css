@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#333;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+header{
+    background-image: url("Netflix background.jpg");
+}
+
+.first-page{
+    display: flex;
+    position: relative;
+    margin: 0 3.0rem;
+    height: 100%;
+    align-items: center;
+}
+
+.first-page img{
+    width: 30vh;
+    height: 15vh;
+}
+
+.first-page button{
+    color: #f3f3f3;
+    background-color: #e50914;
+    border-radius:5px;
+    padding:7px 17px;
+    border:transparent;
+    outline:0;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 60rem;
+}
+
+.hero-text{
+    color: #f3f3f3;
+    width:40%;
+    text-align: center;
+    margin-left: 25rem;
+    margin-top: 5rem;
+}
+
+.hero-text h1{
+    font-size: 3.0rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h2{
+    font-size: 2.0rem;
+    margin-bottom: 1.25rem;
+    margin-left: 2rem;
+}
+
+.form-x {
+    font-size: 1.3rem;
+    margin-bottom:  0.9rem;
+    margin-left: 22rem;
+    color: #f3f3f3;
+}
+
+.input-control{
+    display:flex;
+    flex-direction: row;
+    margin-left: 21rem;
+    padding-bottom: 11rem;
+}
+
+#email-address{
+    height: 3.5rem;
+    width: 30rem;
+    padding: 7px 10px;
+    font-size: 1rem;
+}
+
+.input-control button{
+    color: #f3f3f3;
+    background-color: #e50914;
+    padding:7.0px 36px;
+    border:transparent;
+    outline:0;
+    cursor:pointer;
+    font-size:1.5rem;
+    line-height: normal;
+}
+
+.second-page{
+    display: flex;
+    background-color: black;
+    color: #f3f3f3;
+    border:transparent;
+    margin-top: 0.5rem;
+    height: 27rem;
+}
+
+.second-page-1{
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+.second-page-1 h1{
+    font-size: 3.0rem;
+    margin-bottom: 1rem;
+    margin-top: -4rem;
+}
+
+.second-page-1 p{
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    width:38rem
+}
+
+.third-page{
+    display: flex;
+    background-color: black;
+    color: #f3f3f3;
+    border:transparent;
+    margin-top: 0.5rem;
+    height: 27rem;
+}
+
+.third-page-1{
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+.third-page-1 h1{
+    font-size: 3.0rem;
+    margin-bottom: 1rem;
+    margin-top: -4rem;
+    width: 75%;
+}
+
+.third-page-1 p{
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    width:38rem
+}
+
+.fourth-page{
+    display: flex;
+    background-color: black;
+    color: #f3f3f3;
+    border:transparent;
+    margin-top: 0.5rem;
+    height: 15rem;
+}
+
+.fourth-page-1{
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+.fourth-page-1 h1{
+    font-size: 3.0rem;
+    margin-bottom: 1rem;
+    margin-top: -7rem;
+    width: 75%;
+}
+
+.fourth-page-1 p{
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    width:60%;
+}
+
+.fifth-page{
+    display: flex;
+    background-color: black;
+    color: #f3f3f3;
+    border:transparent;
+    margin-top: 0.5rem;
+    height: 27rem;
+}
+
+.fifth-page-1{
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+.fifth-page-1 h1{
+    font-size: 3.0rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-top: -4rem;
+}
+
+.fifth-page-1 p{
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+    width:35rem
+}
+
+.fifth-page-image{
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.sixth-page{
+    background-color: black;
+    color: #f3f3f3;
+    margin-top: 0.5rem;
+    padding: 1.5rem 4.5rem;
+}
+
+.sixth-page h1{
+    text-align: center;
+    font-size: 3.0rem;
+    margin-top: 2.5rem;
+    margin-bottom: -2rem;
+}
+
+/*Accordion */
+
+.accordion-wrapper {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.accordion {
+    margin: 5rem 0 2rem;
+}
+
+.accordion .accordion-container {
+    position: relative;
+    border: transparent;
+    padding: 20px;
+    background-color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.accordion .accordion-container .label {
+    position: relative;
+    padding: 0.625rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.accordion .accordion-container .label::before {
+    display: inline-block;
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    /* transform: translateY(-50%); */
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.accordion .accordion-container .content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding: 0 0.625rem;
+    transition: 0.5s;
+}
+
+.accordion .accordion-container.active .content {
+    height: 4rem;
+    padding: 0.625rem;
+}
+
+.accordion .accordion-container.active .label::before {
+    transform: rotate(180deg);
+    content: '+';
+}
+
+.form-ix {
+    font-size: 1.3rem;
+    margin-bottom:  1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 16rem;
+    color: #f3f3f3;
+}
+
+.input-control-1{
+    display:flex;
+    flex-direction: row;
+    margin-left: 15rem;
+    padding-bottom: 3rem;
+}
+
+#email-address-1{
+    height: 3.5rem;
+    width: 30rem;
+    padding: 7px 10px;
+    font-size: 1rem;
+}
+
+.input-control-1 button{
+    color: #f3f3f3;
+    background-color: #e50914;
+    padding:7.0px 36px;
+    border:transparent;
+    outline:0;
+    cursor:pointer;
+    font-size:1.5rem;
+    line-height: normal;
+}
+
+.footer-content{
+    margin-top: 0.5rem;
+    background-color: black;
+    color: #737373;
+    display: flex;
+    height:20rem;
+    font-size: 0.9rem;
+    padding-top: 4.0rem;
+    padding-bottom: 3.5rem;
+    padding-left: 13rem;
+    padding-right: 27rem;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.hro-1{
+    width:10%;
+}
+
+#investor{
+    width:10rem;
+}
+
+.hro{
+    margin-bottom: 1.5rem;
+    width: 10rem;
+    font-size: 0.98rem;
+}
+
+.special{
+    margin-bottom: 0.75rem;
+}
+
+.hro-2{
+    margin-top: 2rem;
+}
+
+.second-footer, .third-footer, .fourth-footer{
+    margin-top: 2.7rem;
+    margin-left: 5rem;
+
+}
